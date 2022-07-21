@@ -1,0 +1,21 @@
+.container {
+    border: 1px solid black;
+    height: 450px;
+    position: relative;
+}
+
+.element {
+    background-color: gray;
+    padding: 10px;
+}
+
+.main-element {
+    background-color: yellow;
+    padding: 10px;
+    /*position: static; /*Mi element DOESNOT move at all*/
+    /*position: relative; /*Lets me use top, bottom, right and left, it will move based on the original position of the element*/
+    /*position: absolute; /*It will be moving based on the parent element, and it will ignore the elements around*/
+    /*position: fixed; /*Will not be affected by the scroll*/
+    position: sticky; /*Will have original position and when you scroll it will not be affected*/
+    top: 0;
+}
